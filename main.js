@@ -3,9 +3,21 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const hide = document.querySelector('div');
+hide.className = 'hidden';
+const heart= document.getElementsByClassName('like-glyph')
+heart.addEventListener('click', e =>{
+    e.preventDefault();
+  //  turnOn()
+    mimicServerCall()
+})
 
-
-
+// function turnOn(){
+//   FULL_HEART
+// }
+// function turnOff(){
+//   EMPTY_HEART
+// }
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
